@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Strategy | ProductManagementPatners</title>
+ <link rel="stylesheet" href="styles.css">
+ <script>
+  function loadHeader() {
+   fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById('header').innerHTML = data;
+    });
+  }
+
+  function loadFooter() {
+   fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById('footer').innerHTML = data;
+    });
+  }
+ </script>
+</head>
+<!--div id="header"></div-->
+<body onload="loadHeader(); loadFooter();">
+ <!--<div id="header"></div-->
+
+ <!-- Main content for strategy page -->
+ <section>
+  <h2>For inquiries or further engagement:</h2>
+  <p>hello@productmanagementpartners.com</p>
+ </section>
+<div onload="loadFooter();"></div>
+ <div class="narrow-footer-page">
+
+ </div>
+</body>
+
+</html>
