@@ -1,0 +1,66 @@
+<!-- strategy.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Strategy | ProductManagementPatners</title>
+ <link rel="stylesheet" href="styles.css">
+ <script>
+  function loadHeader() {
+   fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById('header').innerHTML = data;
+    });
+  }
+
+  function loadFooter() {
+   fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById('footer').innerHTML = data;
+    });
+  }
+ </script>
+</head>
+
+<body onload="loadHeader(); loadFooter();">
+ <div id="header"></div>
+ <br><br><br><br>
+ 
+
+ <!-- Main content for strategy page -->
+ <section class="hero-content,hero h1, hero">
+ <div class="hero-content">
+ 
+  <center><h1 color:white>Our Strategy Services</h1></center>
+  <center><p>At Product Management Partners, we believe that exceptional products are born from visionary thinking, deliberate
+  planning, and unwavering execution. Our strategy practice serves as the compass guiding every decision, every feature,
+  and every line of code.
+  Our journey begins with understanding your market landscape. Who are our users? What problems keep them awake at night?
+  How can we quickly create high value solutions that resonate? Our market vision workshop caters to C-level leadership
+  seeking to streamline existing product portfolio/ roadmap, review adjacent opportunities, and remove execution barriers.
+  Why Choose Us?
+  Because we don’t just build docs; we sculpt the customer experience journey to align with the vision. Our strategy isn’t
+  a dusty document; it becomes the heartbeat of your innovation. Join us on this exhilarating journey as we redefine
+  what’s possible.
+    
+  </p><center>
+ 
+</div>
+</section>
+ <br>
+ <br>
+
+
+
+ 
+
+ <div id="footer"></div>
+
+ 
+</body>
+
+</html>

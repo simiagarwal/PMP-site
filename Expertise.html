@@ -1,0 +1,72 @@
+<!-- strategy.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Strategy | ProductManagementPatners</title>
+ <link rel="stylesheet" href="styles.css">
+ <script>
+  function loadHeader() {
+   fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById('header').innerHTML = data;
+    });
+  }
+
+  function loadFooter() {
+   fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById('footer').innerHTML = data;
+    });
+  }
+ </script>
+</head>
+
+<body onload="loadHeader(); loadFooter();">
+ <div id="header"></div>
+ <br><br><br><br>
+
+
+ <!-- Main content for strategy page -->
+ <section class="hero-content,hero h1, hero">
+  <div class="hero-content">
+
+   <center>
+    <h2 style="color:white">Our Expertise Areas</h2>
+   </center>
+   <center>
+    <Section >
+     <br>
+     <br>
+     <ul class="mylist">
+      <a href="strategy.html">Strategy</a><br>
+      <a href="aimachinelearning.html">Rapid Data to Value AI Deployment</a><br>
+      
+      <a href="productmanagement.html">Product Management</a><br>
+     <a href="engineering.html">Engineering</a><br>
+    <a href="#">Strategic Partnerships and IP Alliances</a><br>
+     <a href="datascienceandanalytics.html">Data Science & Analytics</a> <br>
+    <a href="userexperiencedesign.html">User Experience Design</a><br>
+     </ul>
+     
+
+    </Section>
+    <center>
+
+  </div>
+ </section>
+ <br>
+ <br>
+ 
+
+
+ <div id="footer"></div>
+
+
+</body>
+
+</html>
