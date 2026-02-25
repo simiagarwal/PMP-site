@@ -13,19 +13,20 @@
  <link rel="stylesheet" href="styles.css">
 </head>
  <!-- Navigation -->
-  <body>
+  <body onload="loadHeader(); loadFooter();">
  <nav>
   <div class="nav-container">
-   <div class="logo">ProductManagementPatners</div>
+   <div class="logo">ProductManagementPartners</div>
    <ul class="nav-links">
    <!-- <li><a href="#services">Services</a></li>-->
-    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="Expertise.html">Expertise</a></li>
     <!--<li><a href="#insights">Insights</a></li>-->
     <!--<li><a href="#about">About</a></li>-->
     <li><a href="careers.html">Careers</a></li>
    </ul>
-   <a href="contactus.html">
-    <button class="cta-button" a href="contactus.html">Contact Us</button>
+   <a href="contactus.html"
+     class="cta-button-link">
+    <button class="cta-button">Contact Us</button>
   </a>
   </div>
  </nav>
@@ -88,35 +89,35 @@
     <h3 class="service-title">Corporate Strategy</h3>
     <p class="service-description">Define your path forward with data-driven strategies that align your organization and
      drive sustainable growth.</p>
-    <a href="#" class="service-link">Learn More →</a>
+    <a href="strategy.html" class="service-link">Learn More →</a>
    </div>
    <div class="service-card">
     <div class="service-icon">🚀</div>
     <h3 class="service-title">Digital Transformation</h3>
     <p class="service-description">Reimagine your business model and operations for the digital age with
      technology-enabled solutions.</p>
-    <a href="#" class="service-link">Learn More →</a>
+    <a href="digitaltransformation.html" class="service-link">Learn More →</a>
    </div>
    <div class="service-card">
     <div class="service-icon">💡</div>
     <h3 class="service-title">Performance Improvement</h3>
     <p class="service-description">Unlock operational excellence and build capabilities that deliver measurable results
      across your organization.</p>
-    <a href="#" class="service-link">Learn More →</a>
+    <a href="productmanagement.html" class="service-link">Learn More →</a>
    </div>
    <div class="service-card">
     <div class="service-icon">🌱</div>
     <h3 class="service-title">Sustainability & ESG</h3>
     <p class="service-description">Integrate sustainability into your core strategy and create value while addressing
      global challenges.</p>
-    <a href="#" class="service-link">Learn More →</a>
+    <a href="sustainability.html" class="service-link">Learn More →</a>
    </div>
    <div class="service-card">
     <div class="service-icon">🎯</div>
     <h3 class="service-title">M&A Advisory</h3>
     <p class="service-description">Navigate complex transactions with confidence through strategic due diligence and
      integration planning.</p>
-    <a href="#" class="service-link">Learn More →</a>
+    <a href="m&aadvisory.html" class="service-link">Learn More →</a>
    </div>
    <div class="service-card">
     <div class="service-icon">👥</div>
@@ -182,10 +183,13 @@
      <div class="insight-content">
       <div class="insight-category">Featured Report</div>
       <h3 class="insight-title">The AI-Powered Enterprise: A Blueprint for 2026</h3>
-      <p class="insight-excerpt">Our latest research reveals how leading organizations are leveraging AI to reimagine
-       every aspect of their business, from strategy to operations. Download the full report to discover the five
-       pillars of AI readiness.</p>
-      <div class="insight-meta">12 min read · Jan 2026</div>
+      <p class="insight-excerpt"><h2>Beyond the Chatbot:</h2><p> Reimagining the Value Chain.
+      The era of "AI experimentation" has ended. In 2026, the gap between AI leaders and laggards is defined by Core
+      Integration. Our research into top-performing enterprises reveals that success is no longer about implementing tools,
+      but about building a cohesive AI Ecosystem.
+    
+    </p>
+      <div> <a href="AI-2026.html"class="insight-meta">12 min read · Jan 2026</div>
      </div>
     </div>
     <div class="side-insights">
@@ -219,7 +223,7 @@
  </section>
 
  <!-- Footer -->
- <footer>
+<!-- <footer>
   <div class="footer-container">
    <div class="footer-grid">
     <div class="footer-brand">
@@ -264,7 +268,8 @@
     </div>
    </div>
   </div>
- </footer>
+ </footer>-->
+<div id="footer"></div>
 </body>
 
 </html>
